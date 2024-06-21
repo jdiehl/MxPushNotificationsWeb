@@ -8,9 +8,37 @@
     <icon/>
     <properties>
         <propertyGroup caption="General">
-            <property key="sampleText" type="string" required="false">
-                <caption>Default value</caption>
-                <description>Sample text input</description>
+            <property key="onMessage" type="action" required="false">
+                <caption>On Message</caption>
+                <description>Triggered when a push notification is received while the app is open</description>
+            </property>
+            <property key="attrTitle" type="attribute">
+                <caption>Title</caption>
+                <description/>
+                <attributeTypes>
+		            <attributeType name="String"/>
+	            </attributeTypes>
+            </property>
+            <property key="attrBody" type="attribute">
+                <caption>Body</caption>
+                <description/>
+                <attributeTypes>
+		            <attributeType name="String"/>
+	            </attributeTypes>
+            </property>
+            <property key="attrIdentifier" type="attribute">
+                <caption>Identifier</caption>
+                <description/>
+                <attributeTypes>
+		            <attributeType name="String"/>
+	            </attributeTypes>
+            </property>
+            <property key="attrActions" type="attribute">
+                <caption>Actions</caption>
+                <description/>
+                <attributeTypes>
+		            <attributeType name="String"/>
+	            </attributeTypes>
             </property>
         </propertyGroup>
     </properties>

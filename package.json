@@ -21,7 +21,6 @@
     "build": "pluggable-widgets-tools build:web",
     "lint": "pluggable-widgets-tools lint",
     "lint:fix": "pluggable-widgets-tools lint:fix",
-    "prerelease": "npm run lint",
     "release": "pluggable-widgets-tools release:web"
   },
   "devDependencies": {

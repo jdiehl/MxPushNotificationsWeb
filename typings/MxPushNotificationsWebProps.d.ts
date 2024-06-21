@@ -4,13 +4,18 @@
  * @author Mendix Widgets Framework Team
  */
 import { CSSProperties } from "react";
+import { ActionValue, EditableValue } from "mendix";
 
 export interface MxPushNotificationsWebContainerProps {
     name: string;
     class: string;
     style?: CSSProperties;
     tabIndex?: number;
-    sampleText: string;
+    onMessage?: ActionValue;
+    attrTitle: EditableValue<string>;
+    attrBody: EditableValue<string>;
+    attrIdentifier: EditableValue<string>;
+    attrActions: EditableValue<string>;
 }
 
 export interface MxPushNotificationsWebPreviewProps {
@@ -22,5 +27,9 @@ export interface MxPushNotificationsWebPreviewProps {
     style: string;
     styleObject?: CSSProperties;
     readOnly: boolean;
-    sampleText: string;
+    onMessage: {} | null;
+    attrTitle: string;
+    attrBody: string;
+    attrIdentifier: string;
+    attrActions: string;
 }
